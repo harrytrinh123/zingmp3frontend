@@ -1,3 +1,7 @@
+.chart-wrapper {
+    padding: 50px;
+}
+
 .chart-title .title {
     display: inline;
     font-size: 40px;
