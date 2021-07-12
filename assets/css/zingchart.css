@@ -1,0 +1,24 @@
+.chart-title .title {
+    display: inline;
+    font-size: 40px;
+    font-weight: 800;
+    color: #6b3483;
+}
+
+.chart-title button {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid #6b3483;
+    background-color: #6b3483;
+    margin-left: 5px;
+}
+
+.chart-title .fa-play {
+    color: white;
+}
+
+/* .chart-wrapper, .bg-blur {
+    background: url(../images/bg-chart.fd766403.jpg) top/cover no-repeat;
+    filter:grayscale(1);
+} */
