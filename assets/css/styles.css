@@ -246,6 +246,7 @@
 
 .playlist-title:hover {
     color: var(--font-violet);
+    cursor: pointer;
 }
 
 .zoomout {
@@ -276,6 +277,10 @@
     display: none;
     transition: all 0.5s;
     background-color: rgba(23, 15, 35, 0.5);
+}
+
+.play:hover {
+    cursor: pointer;
 }
 
 .btn-play {
