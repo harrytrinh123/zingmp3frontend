@@ -78,6 +78,7 @@
     font-weight: 900;
     line-height: 1;
     text-align: center;
+    padding-left: 10px;
 }
 
 .is-center {
@@ -140,12 +141,25 @@ button.show-all {
     padding: 8px 25px;
 }
 
+.box-header {
+    margin: 10px 35px;
+    margin-top: -10px;
+
+}
+
+.box-header button {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+
 .box-header a {
     color: #fff;
     font-size: 24px;
     font-weight: 700px;
     line-height: normal;
     display: inline-block;
+    text-decoration: none;
 }
 
 .zm-btn {
@@ -166,4 +180,15 @@ button.show-all {
     border-radius: 16px;
     background-color: hsl(0deg 0% 100% / 5%);
     padding: 20px 10px;
+}
+.section-header {
+    margin: 10px 0;
+}
+
+.section-header a {
+    text-decoration: none;
+}
+
+.section-header a:hover {
+    color: #fff;
 }
