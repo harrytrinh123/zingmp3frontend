@@ -166,7 +166,7 @@ a:hover {
     width: 48px;
     height: 48px;
     overflow: hidden;
-    position: relative;
+    border-radius: 50%;
     
 }
 .zm-card-image:hover img {
@@ -229,6 +229,7 @@ a:hover {
 }
 
 .comment-user {
+    margin-top: 10px;
     width: 100%;
 }
 
