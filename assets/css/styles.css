@@ -98,10 +98,10 @@
     color: rgb(255, 255, 255);
 }
 
-.sidebar .nav-link svg {
-    font-size: 25px;
-    min-width: 25px;
-    padding-right: 8px;
+.sidebar .nav-link i {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
     height: 100%;
 }
 

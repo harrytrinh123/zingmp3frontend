@@ -137,15 +137,15 @@
     cursor: pointer;
 }
 
-.btn-play {
+.btn-play i{
     color: white;
     font-size: 22px;
 }
 
-.btn-play:hover {
+.btn-play:hover i{
     color: #ccc;
 }
 
-.btn-play-bigger {
+.btn-play-bigger i{
     font-size: 40px;
 }
