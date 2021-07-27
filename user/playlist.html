@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/playlist.css">
+
+</head>
+
+<body>
+    <!-- show -->
+    <div class="contain p-0 show">
+        <div class="blur">
+            <!-- Nav -->
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center sticky-top">
+                <ul class="tab d-flex">
+                    <li class="tab-item is-active"><span>Danh sách phát</span></li>
+                    <li class="tab-item">Karaoke</li>
+                    <li class="tab-item">Lời bài hát</li>
+                </ul>
+                <div class="tab-right d-flex">
+                    <div class="level-icon">
+                        <div class="btn icon-right">
+                            <i class="icon-item fas fa-expand-alt" id="expand"></i>
+                            <i class="icon-item fas fa-compress-alt" id="compress"></i>
+                        </div>
+                        <div class="btn icon-right"><i class="icon-item fas fa-cog"></i></div>
+                        <div class="btn icon-right"><i class="icon-item fas fa-angle-down"></i></div>
+                    </div>
+                </div>
+            </nav>
+            <!-- content -->
+            <div class="main">
+                <div class="play-list d-flex justify-content-center">
+                    <div class="slide-show">
+                        <div class="slides d-flex">
+                            <div class="slide list-card-start mf-1">
+                                <div class="btn btn-toggle-play playlist-icon" id="playButton" style="width: 300px; left: -135px;"></div>
+                                <img id="start" class="list-card-item not-active" src="../assets/images/playlist/avartar.jpg" alt="">
+                                <div class="song-singer" style="margin-left:-50px;float: left;">
+                                    <span class="song" id="bh"></span> <br>
+                                    <span class="singer" id="cs"></span>
+                                </div>
+                            </div>
+                            <div class="slide list-card">
+                                <div class="btn btn-toggle-play playlist-icon playlist-not-active" id="playButton"></div>
+                                <img id="image-card" class="list-card-item not-active" src="../assets/images/playlist/avartar.jpg" alt="" style="float: right;
+                                margin-right: 8px">
+                                <div class="song-singer" style="margin-left: 42px;float: left;">
+                                    <span class="song" id="bh"></span> <br>
+                                    <span class="singer" id="cs"></span>
+                                </div>
+                            </div>
+                            <div class="slide list-card active-card">
+                                <div class="btn btn-toggle-play playlist-icon playlist-active" id="playButton"></div>
+                                <img id="play-pic" class="list-card-item active-image" src="" alt="">
+                                <div class="song-singer">
+                                    <span class="song" id="bh"></span> <br>
+                                    <span class="singer" id="cs"></span>
+                                </div>
+                            </div>
+                            <div class="slide list-card">
+                                <div class="btn btn-toggle-play playlist-icon playlist-not-active" id="playButton" style="margin-left: 35px;"></div>
+                                <img id="image-card" class="list-card-item not-active" style="margin-left: 11px;" src="../assets/images/playlist/avartar.jpg" alt="">
+                                <div class="song-singer" style="margin-left: 42px;">
+                                    <span class="song" id="bh"></span> <br>
+                                    <span class="singer" id="cs"></span>
+                                </div>
+                            </div>
+                            <div class="slide list-card list-card-end">
+                                <div class="btn btn-toggle-play playlist-icon" id="playButton" style="width: 300px;margin-left: 60px;"></div>
+                                <img id="end" class="list-card-item not-active" src="../assets/images/playlist/avartar.jpg" alt="">
+                                <div class="song-singer">
+                                    <span class="song" id="bh"></span> <br>
+                                    <span class="singer" id="cs"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bar">
+                            <div id="btn-pre" class="btn icon-right"><i class="fas fa-chevron-left"></i></div>
+                            <div id="btn-next" class="btn icon-right"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar-expand-lg">
+            <div class="content d-flex">
+                <div class="head d-flex justify-content-start mt-3 ml-4">
+                    <div class="media-left pr-2">
+                        <figure class="image">
+                            <img id="pic" src="" alt="">
+                        </figure>
+                    </div>
+                    <div class="media-content ml-1 mt-2">
+                        <div class="name-song">
+                            <span>
+                                <a href="" class="song text-dark"></a>
+                            </span>
+                        </div>
+                        <div class="name-singer">
+                            <span>
+                                <a href="" class="singer text-dark" style="font-size: 12px;"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-right mt-3 ml-3">
+                        <div class="btn btn-repeat" type="button"><i class="far fa-heart"></i></div>
+                        <div class="btn"><i class="fas fa-ellipsis-h"></i></div>
+                    </div>
+                </div>
+                <div class="between">
+                    <div class="control d-flex justify-content-center">
+                        <div class="btn btn-random">
+                            <i class="btn-icon fas fa-random"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                            <i class="btn-icon fas fa-step-backward"></i>
+                        </div>
+                        <div class="btn btn-toggle-play" id="playButton">
+                            <i class="icon playButton-icon far fa-play-circle"></i>
+                            <i class="icon pauseButton-icon far fa-pause-circle"></i>
+                        </div>
+                        <div class="btn btn-next">
+                            <i class="btn-icon  fas fa-step-forward"></i>
+                        </div>
+                        <div class="btn btn-retweet">
+                            <i class="btn-icon fas fa-retweet"></i>
+                        </div>
+                    </div>
+                    <div class="time d-flex">
+                        <span class="time-start">00:00</span>
+                        <div class="audio-time">
+                            <input id="progess" class="line-time" type="range" step="1" min="0" max="100" value="0">
+                            <div class="line-progress" id="color-progress"></div>
+                            <audio id="audio" src=""></audio>
+                        </div>
+                        <span class="time-end">00:00</span>
+                    </div>
+                </div>
+                <div class="tail d-flex justify-content-end align-items-center">
+                    <div class="icon-tail mv">
+                        <img src="../assets/images/playlist/MV.png" alt="" width="20px" height="20px">
+                    </div>
+                    <div class="icon-tail karaoke">
+                        <img src="../assets/images/playlist/karaoke.png" alt="" width="20px" height="20px">
+                    </div>
+                    <div class="icon-tail icon-volum">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="icon-tail volum audio-time">
+                        <input class="line-time" id="volum" type="range" min="0" max="100" step="1" value="1">
+                    </div>
+                    <div class="icon-tail expand">
+                        <i id="expand" class="fas fa-expand-alt"></i>
+                    </div>
+                    <div class="icon-tail list-music">
+                        <img src="../assets/images/playlist/list.png" alt="" width="20px" height="20px">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- playlist -->
+
+
+    <!-- Script -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/playlist.js"></script>
+</body>
+
+</html>
