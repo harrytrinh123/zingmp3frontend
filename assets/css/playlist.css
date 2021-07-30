@@ -33,7 +33,7 @@ body {
     padding-top: 20px;
 }
 
-ul {
+.tab {
     background-color: hsla(0, 0%, 100%, .1);
     border-radius: 999px;
     list-style: none;
@@ -41,7 +41,7 @@ ul {
     cursor: pointer;
 }
 
-li {
+.tab li {
     color: white;
     font-size: 16px;
     padding: 7px 50px;
@@ -85,11 +85,15 @@ li {
 
 /* content-show */
 
-.main {
+.main-playlist {
     margin-top: 40px;
     align-items: center;
     width: 100%;
     overflow: hidden;
+}
+
+.content-playlist i {
+    color: white;
 }
 
 .play-list {
@@ -206,14 +210,15 @@ footer {
     position: fixed;
     bottom: 0;
     overflow: hidden;
+    background-color: #120c1c;
 }
 
-.content {
+.content-playlist {
     padding: 0 20px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.content a {
+.content-playlist a {
     color: black;
     text-decoration: none;
 }
@@ -268,6 +273,11 @@ figure img {
     color: #9c32ca;
 }
 
+.time-start,
+.time-end {
+    color: white;
+}
+
 .between .time .time-start {
     margin-right: 10px;
     opacity: .5;
@@ -281,6 +291,7 @@ figure img {
 }
 
 .audio-time:hover .line-time {
+    background-color: #ccc;
     height: 5px;
 }
 

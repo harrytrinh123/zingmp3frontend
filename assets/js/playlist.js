@@ -93,6 +93,7 @@ $(document).ready(() => {
             //show full screen
             $('.fa-expand-alt').click(() => {
                 $('.show').show(100)
+                $('.main').hide()
             })
 
             //rê chuột vào ảnh 
