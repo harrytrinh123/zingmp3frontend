@@ -316,6 +316,7 @@ figure img {
     cursor: pointer;
     position: absolute;
     cursor: pointer;
+    background-color: #fff
 }
 
 .line-time::-webkit-slider-thumb {
