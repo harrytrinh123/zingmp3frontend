@@ -149,7 +149,7 @@
     display: block;
 }
 
-.icon {
+.z-icon {
     color: hsla(0,0%,100%,0.5);
     font-size: 16px;
     padding: 5px;
@@ -205,6 +205,10 @@ button.show-all {
 
 .zm-btn .fas {
     color: #fff;
+}
+
+.week-chart-section {
+    margin-bottom: 70px;
 }
 
 .week-chart-box {
